@@ -42,13 +42,17 @@ function Dashboard() {
   const today = blocks.filter((b) => b.date === "2026-08-28");
   const availability = useMemo(
     () =>
-      (sections.reduce((s, x) => s + x.availability, 0) / sections.length).toFixed(1),
+      sections.length
+        ? (
+            sections.reduce((s, x) => s + (x.availability ?? 0), 0) / sections.length
+          ).toFixed(1)
+        : "0.0",
     [sections],
   );
   const critical = defects.filter((d) => d.severity === "Critical").length;
-  const aiScore = Math.round(
-    blocks.reduce((s, b) => s + b.aiScore, 0) / blocks.length,
-  );
+  const aiScore = blocks.length
+    ? Math.round(blocks.reduce((s, b) => s + (b.aiScore ?? 0), 0) / blocks.length)
+    : 0;
 
   const alerts: Alert[] = alertsData.map((a) =>
     acked.includes(a.id) ? { ...a, acknowledged: true } : a,
