@@ -14,12 +14,13 @@ SECTION_IDS = [
 
 def tick():
     for section_id in SECTION_IDS:
-        db.reference(f"/sensors/{section_id}").set({
+        # Changed .set to .update
+        db.reference(f"/sensors/{section_id}").update({
             "vibration": round(random.uniform(0.5, 8.5), 2),
             "temperature": round(random.uniform(20, 85), 1),
-            "axleLoad": round(random.uniform(10, 35), 1),
+            "axleload": round(random.uniform(10, 35), 1),
         })
-    print("Updated /sensors for", len(SECTION_IDS), "sections")
+    print("Updated /sensors for", len(SECTION_IDS), "sections"))
 
 def background_loop():
     while True:
