@@ -1,0 +1,325 @@
+{
+  "sections": [
+    {
+      "section_id": "SEC01",
+      "name": "NDLS-GZB",
+      "length_km": 18.9,
+      "max_speed_kmph": 80,
+      "asset_types": [
+        "track",
+        "signal",
+        "OHE"
+      ]
+    },
+    {
+      "section_id": "SEC02",
+      "name": "GZB-MB",
+      "length_km": 20.6,
+      "max_speed_kmph": 100,
+      "asset_types": [
+        "track",
+        "signal",
+        "OHE"
+      ]
+    },
+    {
+      "section_id": "SEC03",
+      "name": "MB-SRE",
+      "length_km": 11.8,
+      "max_speed_kmph": 80,
+      "asset_types": [
+        "track",
+        "signal",
+        "OHE"
+      ]
+    },
+    {
+      "section_id": "SEC04",
+      "name": "SRE-ALJN",
+      "length_km": 19.5,
+      "max_speed_kmph": 80,
+      "asset_types": [
+        "track",
+        "signal",
+        "OHE"
+      ]
+    },
+    {
+      "section_id": "SEC05",
+      "name": "ALJN-TDL",
+      "length_km": 18.0,
+      "max_speed_kmph": 80,
+      "asset_types": [
+        "track",
+        "signal",
+        "OHE"
+      ]
+    }
+  ],
+  "trains": [
+    {
+      "train_id": "TRN001",
+      "section_id": "SEC01",
+      "start_min": 191,
+      "end_min": 211,
+      "priority": "express"
+    },
+    {
+      "train_id": "TRN007",
+      "section_id": "SEC01",
+      "start_min": 778,
+      "end_min": 793,
+      "priority": "passenger"
+    },
+    {
+      "train_id": "TRN010",
+      "section_id": "SEC01",
+      "start_min": 1130,
+      "end_min": 1160,
+      "priority": "freight"
+    },
+    {
+      "train_id": "TRN006",
+      "section_id": "SEC02",
+      "start_min": 440,
+      "end_min": 470,
+      "priority": "express"
+    },
+    {
+      "train_id": "TRN005",
+      "section_id": "SEC02",
+      "start_min": 865,
+      "end_min": 895,
+      "priority": "passenger"
+    },
+    {
+      "train_id": "TRN003",
+      "section_id": "SEC02",
+      "start_min": 1330,
+      "end_min": 1375,
+      "priority": "express"
+    },
+    {
+      "train_id": "TRN008",
+      "section_id": "SEC03",
+      "start_min": 1236,
+      "end_min": 1266,
+      "priority": "express"
+    },
+    {
+      "train_id": "TRN009",
+      "section_id": "SEC04",
+      "start_min": 1098,
+      "end_min": 1113,
+      "priority": "passenger"
+    },
+    {
+      "train_id": "TRN004",
+      "section_id": "SEC04",
+      "start_min": 1206,
+      "end_min": 1236,
+      "priority": "express"
+    },
+    {
+      "train_id": "TRN002",
+      "section_id": "SEC05",
+      "start_min": 1232,
+      "end_min": 1247,
+      "priority": "freight"
+    }
+  ],
+  "scored_assets": [
+    {
+      "section_id": "SEC01",
+      "asset_type": "track",
+      "age_years": 12.6,
+      "last_maintenance_days_ago": 190,
+      "vibration_index": 0.108,
+      "load_cycles_per_day": 73,
+      "defect_flag_count": 2,
+      "urgency": 9.87
+    },
+    {
+      "section_id": "SEC01",
+      "asset_type": "signal",
+      "age_years": 13.4,
+      "last_maintenance_days_ago": 400,
+      "vibration_index": 0.386,
+      "load_cycles_per_day": 169,
+      "defect_flag_count": 6,
+      "urgency": 9.99
+    },
+    {
+      "section_id": "SEC01",
+      "asset_type": "OHE",
+      "age_years": 17.4,
+      "last_maintenance_days_ago": 199,
+      "vibration_index": 0.377,
+      "load_cycles_per_day": 236,
+      "defect_flag_count": 6,
+      "urgency": 9.98
+    },
+    {
+      "section_id": "SEC02",
+      "asset_type": "track",
+      "age_years": 3.7,
+      "last_maintenance_days_ago": 186,
+      "vibration_index": 0.166,
+      "load_cycles_per_day": 399,
+      "defect_flag_count": 3,
+      "urgency": 9.68
+    },
+    {
+      "section_id": "SEC02",
+      "asset_type": "signal",
+      "age_years": 13.1,
+      "last_maintenance_days_ago": 316,
+      "vibration_index": 0.245,
+      "load_cycles_per_day": 175,
+      "defect_flag_count": 4,
+      "urgency": 9.99
+    },
+    {
+      "section_id": "SEC02",
+      "asset_type": "OHE",
+      "age_years": 3.7,
+      "last_maintenance_days_ago": 199,
+      "vibration_index": 0.098,
+      "load_cycles_per_day": 335,
+      "defect_flag_count": 5,
+      "urgency": 9.66
+    },
+    {
+      "section_id": "SEC03",
+      "asset_type": "track",
+      "age_years": 4.8,
+      "last_maintenance_days_ago": 171,
+      "vibration_index": 0.296,
+      "load_cycles_per_day": 167,
+      "defect_flag_count": 0,
+      "urgency": 9.13
+    },
+    {
+      "section_id": "SEC03",
+      "asset_type": "signal",
+      "age_years": 16.5,
+      "last_maintenance_days_ago": 166,
+      "vibration_index": 0.34,
+      "load_cycles_per_day": 340,
+      "defect_flag_count": 4,
+      "urgency": 9.96
+    },
+    {
+      "section_id": "SEC03",
+      "asset_type": "OHE",
+      "age_years": 17.6,
+      "last_maintenance_days_ago": 166,
+      "vibration_index": 0.448,
+      "load_cycles_per_day": 379,
+      "defect_flag_count": 5,
+      "urgency": 9.96
+    },
+    {
+      "section_id": "SEC04",
+      "asset_type": "track",
+      "age_years": 9.4,
+      "last_maintenance_days_ago": 140,
+      "vibration_index": 0.393,
+      "load_cycles_per_day": 325,
+      "defect_flag_count": 4,
+      "urgency": 9.84
+    },
+    {
+      "section_id": "SEC04",
+      "asset_type": "signal",
+      "age_years": 5.6,
+      "last_maintenance_days_ago": 304,
+      "vibration_index": 0.035,
+      "load_cycles_per_day": 235,
+      "defect_flag_count": 4,
+      "urgency": 9.79
+    },
+    {
+      "section_id": "SEC04",
+      "asset_type": "OHE",
+      "age_years": 4.8,
+      "last_maintenance_days_ago": 75,
+      "vibration_index": 0.056,
+      "load_cycles_per_day": 74,
+      "defect_flag_count": 1,
+      "urgency": 5.74
+    },
+    {
+      "section_id": "SEC05",
+      "asset_type": "track",
+      "age_years": 17.3,
+      "last_maintenance_days_ago": 83,
+      "vibration_index": 0.189,
+      "load_cycles_per_day": 266,
+      "defect_flag_count": 1,
+      "urgency": 9.83
+    },
+    {
+      "section_id": "SEC05",
+      "asset_type": "signal",
+      "age_years": 12.1,
+      "last_maintenance_days_ago": 202,
+      "vibration_index": 0,
+      "load_cycles_per_day": 320,
+      "defect_flag_count": 6,
+      "urgency": 8.65
+    },
+    {
+      "section_id": "SEC05",
+      "asset_type": "OHE",
+      "age_years": 5.4,
+      "last_maintenance_days_ago": 288,
+      "vibration_index": 0.219,
+      "load_cycles_per_day": 108,
+      "defect_flag_count": 3,
+      "urgency": 9.91
+    }
+  ],
+  "schedule": [
+    {
+      "block_id": "BLK002_SEC01_signal",
+      "section_id": "SEC01",
+      "start_min": 1320,
+      "end_min": 1365,
+      "urgency": 9.99,
+      "crew_required": 1
+    },
+    {
+      "block_id": "BLK008_SEC03_signal",
+      "section_id": "SEC03",
+      "start_min": 1320,
+      "end_min": 1365,
+      "urgency": 9.96,
+      "crew_required": 1
+    },
+    {
+      "block_id": "BLK011_SEC04_signal",
+      "section_id": "SEC04",
+      "start_min": 1320,
+      "end_min": 1365,
+      "urgency": 9.79,
+      "crew_required": 1
+    },
+    {
+      "block_id": "BLK003_SEC01_OHE",
+      "section_id": "SEC01",
+      "start_min": 1380,
+      "end_min": 1440,
+      "urgency": 9.98,
+      "crew_required": 2
+    },
+    {
+      "block_id": "BLK005_SEC02_signal",
+      "section_id": "SEC02",
+      "start_min": 1380,
+      "end_min": 1425,
+      "urgency": 9.99,
+      "crew_required": 1
+    }
+  ]
+}
