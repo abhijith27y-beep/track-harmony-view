@@ -37,9 +37,23 @@ const PAD = 44;
 const MAX_KM = 300;
 const COLORS = ["var(--color-tms)", "var(--color-tdms)", "var(--color-smms)"];
 
+function toArray<T>(v: unknown): T[] {
+  if (Array.isArray(v)) return v as T[];
+  if (v && typeof v === "object") return Object.values(v as Record<string, T>);
+  return [];
+}
+
+type PathPoint = { hour: number; km: number };
+type TrainPath = { id: string; name: string; points: PathPoint[] };
+
 function Corridor() {
-  const { data: paths } = useRealtime("/telemetry", TRAIN_PATHS);
-  const { data: slots } = useRealtime("/slots", SLOTS);
+  const { data: rawPaths } = useRealtime("/telemetry", TRAIN_PATHS);
+  const { data: rawSlots } = useRealtime("/slots", SLOTS);
+
+  const paths: TrainPath[] = toArray<TrainPath>(rawPaths)
+    .map((p) => ({ ...p, points: toArray<PathPoint>(p?.points) }))
+    .filter((p) => p.points.length > 0);
+  const slots = toArray<(typeof SLOTS)[number]>(rawSlots);
 
   const x = (hour: number) => PAD + (hour / 24) * (W - PAD * 2);
   const y = (km: number) => PAD + (km / MAX_KM) * (H - PAD * 2);
